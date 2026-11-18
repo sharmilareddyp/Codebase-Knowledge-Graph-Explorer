@@ -149,3 +149,4 @@ CKG_RUN_INTEGRATION=1 pytest -m integration
 - The vector index is global. Queries over-fetch and filter by repository, then fill any shortfall by scanning that repository's stored embeddings. Large repositories will spend memory on that fallback.
 - Re-indexing replaces one repository's graph. A crash during a write can leave that repository partial until the next index.
 - Answers are only as good as the retrieved excerpts. The tool will not invent a citation when nothing was retrieved, and it should not be treated as proof of runtime behavior.
+# Document-Ingestion-Retrieval
